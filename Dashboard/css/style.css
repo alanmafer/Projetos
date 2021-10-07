@@ -259,6 +259,25 @@ body {
   color: var(--white);
 }
 
+.graphBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+  min-height: 200px;
+}
+
+.graphBox .box {
+  position: relative;
+  background: #ffffff;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
 .details {
   position: relative;
   width: 100%;
@@ -266,7 +285,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 30px;
-  margin-top: 10px;
+  /*margin-top: 10px; */
 }
 
 .details .recentOrders {
@@ -426,6 +445,10 @@ body {
 }
 
 @media (max-width: 991px) {
+  .graphBox {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
   .navigation {
     left: -300px;
   }
